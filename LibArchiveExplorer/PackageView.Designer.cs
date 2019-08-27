@@ -34,6 +34,7 @@
             this.fileViewContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.extractSelectedItems = new System.Windows.Forms.ToolStripMenuItem();
             this.openSelectedArchiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printExtendedInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.largeImageList = new System.Windows.Forms.ImageList(this.components);
             this.smallImageList = new System.Windows.Forms.ImageList(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -47,7 +48,7 @@
             this.filePropertyGrid = new System.Windows.Forms.PropertyGrid();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openEditorButton = new System.Windows.Forms.Button();
-            this.printExtendedInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.replaceFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileViewContextMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -74,23 +75,31 @@
             this.fileViewContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.extractSelectedItems,
             this.openSelectedArchiveToolStripMenuItem,
-            this.printExtendedInfoToolStripMenuItem});
+            this.printExtendedInfoToolStripMenuItem,
+            this.replaceFileToolStripMenuItem});
             this.fileViewContextMenu.Name = "fileViewContextMenu";
-            this.fileViewContextMenu.Size = new System.Drawing.Size(197, 92);
+            this.fileViewContextMenu.Size = new System.Drawing.Size(198, 114);
             // 
             // extractSelectedItems
             // 
             this.extractSelectedItems.Name = "extractSelectedItems";
-            this.extractSelectedItems.Size = new System.Drawing.Size(196, 22);
+            this.extractSelectedItems.Size = new System.Drawing.Size(197, 22);
             this.extractSelectedItems.Text = "Extract selected items...";
             this.extractSelectedItems.Click += new System.EventHandler(this.extractItemsToolStripMenuItem_Click);
             // 
             // openSelectedArchiveToolStripMenuItem
             // 
             this.openSelectedArchiveToolStripMenuItem.Name = "openSelectedArchiveToolStripMenuItem";
-            this.openSelectedArchiveToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.openSelectedArchiveToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.openSelectedArchiveToolStripMenuItem.Text = "Open selected archive";
             this.openSelectedArchiveToolStripMenuItem.Click += new System.EventHandler(this.openSelectedArchiveToolStripMenuItem_Click);
+            // 
+            // printExtendedInfoToolStripMenuItem
+            // 
+            this.printExtendedInfoToolStripMenuItem.Name = "printExtendedInfoToolStripMenuItem";
+            this.printExtendedInfoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.printExtendedInfoToolStripMenuItem.Text = "Print extended info";
+            this.printExtendedInfoToolStripMenuItem.Click += new System.EventHandler(this.printExtendedInfoToolStripMenuItem_Click);
             // 
             // largeImageList
             // 
@@ -108,8 +117,8 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                  | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -154,9 +163,9 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                  | System.Windows.Forms.AnchorStyles.Left)
-                  | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.Location = new System.Drawing.Point(3, 32);
             this.splitContainer1.Name = "splitContainer1";
@@ -225,12 +234,12 @@
             this.openEditorButton.UseVisualStyleBackColor = true;
             this.openEditorButton.Click += new System.EventHandler(this.openEditorButton_Click);
             // 
-            // printExtendedInfoToolStripMenuItem
+            // replaceFileToolStripMenuItem
             // 
-            this.printExtendedInfoToolStripMenuItem.Name = "printExtendedInfoToolStripMenuItem";
-            this.printExtendedInfoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.printExtendedInfoToolStripMenuItem.Text = "Print extended info";
-            this.printExtendedInfoToolStripMenuItem.Click += new System.EventHandler(this.printExtendedInfoToolStripMenuItem_Click);
+            this.replaceFileToolStripMenuItem.Name = "replaceFileToolStripMenuItem";
+            this.replaceFileToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.replaceFileToolStripMenuItem.Text = "Replace file";
+            this.replaceFileToolStripMenuItem.Click += new System.EventHandler(this.ReplaceFileToolStripMenuItem_Click);
             // 
             // PackageView
             // 
@@ -275,5 +284,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button openEditorButton;
         private System.Windows.Forms.ToolStripMenuItem printExtendedInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem replaceFileToolStripMenuItem;
     }
 }

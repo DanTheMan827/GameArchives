@@ -40,7 +40,7 @@ namespace GameArchives.Common
 
     public long DataLocation => data_offset;
 
-    private Stream img_file;
+    public Stream img_file;
     private long data_offset;
     private const int BUFFER_SIZE = 8192;
 

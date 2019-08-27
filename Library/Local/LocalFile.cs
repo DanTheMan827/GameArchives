@@ -60,7 +60,7 @@ namespace GameArchives.Local
       }
       catch(Exception ex)
       {
-        return File.OpenRead(path);
+        return File.OpenWrite(path);
       }
     }
   }

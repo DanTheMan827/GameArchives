@@ -28,7 +28,7 @@ namespace GameArchives.Common
   /// <summary>
   /// A single stream which is actually made up of a number of streams in sequence.
   /// </summary>
-  class MultiStream : Stream
+  public class MultiStream : Stream
   {
     private IList<Stream> parts;
     private IList<long> partSizes;
@@ -144,7 +144,7 @@ namespace GameArchives.Common
     /// <param name="offset"></param>
     /// <param name="s"></param>
     /// <returns></returns>
-    private long offsetToStream(long offset, out Stream s)
+    public long offsetToStream(long offset, out Stream s)
     {
       for (var i = 0; i < parts.Count; i++)
       {
